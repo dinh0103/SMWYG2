@@ -1,0 +1,187 @@
+/* Reset + base styles */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  line-height: 1.6;
+  background-color: rgb(248, 203, 144);
+  color: black;
+}
+
+.englebert-regular {
+  font-family: "Englebert", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Header */
+header {
+  background: linear-gradient(180deg, #2f55a7, #cddcff);
+  padding: 3rem 1.1rem;
+  text-align: center;
+  position: relative;
+}
+
+header img {
+  max-width: 800px;
+  margin-top: 1.5rem;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 7.4rem;
+}
+
+header p {
+  margin-top: 0.5rem;
+  font-size: 1.3rem;
+  color: #faae0a;
+
+  position: relative;
+  z-index: 2;
+}
+
+button {
+    background-color: black;
+    color: white;
+    padding: 10px 27px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+button:hover {
+    background-color: darkmagenta;
+}
+
+.dark-mode {
+  background-color: #1f1917;
+  color: white;
+}
+
+.dark-mode header {
+  background: linear-gradient(180deg, #181120, #373188);
+}
+
+.cactus {
+  position: absolute;
+  bottom: -30px;
+  width: 200px;
+  z-index: 1;
+}
+
+.cactus-left {
+  left: 40px;
+}
+
+.cactus-right {
+  right: 40px;
+}
+
+.cactus:hover {
+  animation: wiggle 0.5s ease;
+}
+
+@keyframes wiggle {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(5deg); }
+  50% { transform: rotate(-5deg); }
+  75% { transform: rotate(5deg); }
+  100% { transform: rotate(0deg); }
+}
+
+/* Main content */
+main {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+  font: 3rem;
+}
+
+.section {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  margin: 1rem auto;
+  width: 100%;
+  font-size: 2rem;
+}
+
+.section img {
+  flex: 1;
+  max-width: 600px;
+  width: 100%;
+  border-radius: 16px;
+}
+
+.section .text p,
+.section .text li {
+  font-size: 1.2rem;
+}
+
+
+.section.reverse {
+  flex-direction: row-reverse;
+}
+
+section h2 {
+  font-size: 2rem;
+  border-left: 4px solid orange;
+  padding-left: 0.75rem;
+  margin-bottom: 1rem;
+  color: purple;
+}
+
+/* Text elements */
+p {
+  margin-bottom: 1rem;
+}
+
+ul,
+ol {
+  margin-left: 1.5rem;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+ul li,
+ol li {
+  line-height: 1.8;
+}
+
+/* Images */
+img {
+  width: 100%;
+  margin-top: 1rem;
+  border-radius: 8px;
+}
+
+#triggerItem {
+  cursor: pointer;
+  color: red;
+}
+
+.hidden-img {
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  width: 90%;
+  margin-top: 10px;
+}
+
+.show-img {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 1rem;
+}
